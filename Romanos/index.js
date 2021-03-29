@@ -10,14 +10,14 @@ form.addEventListener('submit', event => {
   if (isNaN(number) || number <= 0) {
     errorText.innerHTML = 'Ingrese un número valido o mayor a cero';
   } else {
-    const result = romanize(number);
+    const result = convertToRoman(number);
     console.log(result);
     document.getElementById('modal1').classList.add('is-visible');
     modalText.innerHTML = result;
   }
 });
 
-const romanize = num => {
+const convertToRoman = num => {
   const romanNumbers = {
     M: 1000,
     CM: 900,

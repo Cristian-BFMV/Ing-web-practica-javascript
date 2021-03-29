@@ -1,0 +1,133 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  margin-top: 8rem;
+  width: 100%;
+}
+
+.form-container {
+  box-shadow: 5px 3px 4px 4px rgb(226, 226, 226);
+  padding: 2rem;
+}
+
+.number-form {
+  max-width: 30rem;
+  text-align: center;
+  padding: 1.5rem 2;
+}
+
+label {
+  font-size: 22px;
+  display: block;
+  margin: 0.6rem;
+}
+
+.number {
+  overflow: auto;
+  resize: none;
+  width: 80%;
+  border: 1px solid rgb(201, 201, 201);
+  border-radius: 0.4rem;
+  outline: none;
+  transition: all 0.1s ease-in-out;
+  padding: 0.5rem 0.1rem;
+}
+
+.number:focus {
+  border: 1px solid rgb(125, 149, 255);
+  border-radius: 0.4rem;
+}
+
+.submit-button {
+  margin-top: 0.5rem;
+  padding: 0.5rem 0;
+  background-color: white;
+  border: 1px solid rgb(37, 37, 37);
+  font-size: 18px;
+  border-radius: 0.8rem;
+  width: 80%;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  color: rgb(37, 37, 37);
+}
+
+.submit-button:hover {
+  background-color: rgb(37, 37, 37);
+  border: 1px solid white;
+  color: white;
+}
+
+.error-text {
+  color: rgb(255, 52, 52);
+  font-size: 1.2rem;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.295);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.35s ease-in;
+}
+
+.modal-dialog {
+  position: relative;
+  max-width: 35rem;
+  min-width: 20rem;
+  max-height: 80vh;
+  min-height: 30vh;
+  border-radius: 5px;
+  background: white;
+  overflow: auto;
+  cursor: default;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(240, 240, 240);
+  padding: 0 0.5rem;
+}
+
+.modal-header .modal-close {
+  font-size: 1.5rem;
+}
+
+.modal {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s ease-in;
+}
+
+.modal.is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.close-modal {
+  font-size: 1.4rem;
+  border: none;
+  background-color: rgb(240, 240, 240);
+}
+
+.modal-content {
+  padding: 0 0.5rem;
+  font-size: 1.4rem;
+}

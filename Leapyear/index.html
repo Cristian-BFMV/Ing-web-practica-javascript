@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Año bisiesto</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>Verifique si el año es bisiesto</h1>
+            <form class="year-form">
+                <label for="year">Ingrese el año</label>
+                <input type="text" value="" id="year" class="year">
+                <button type="submit" class="submit-button">Submit</button>
+                <p class="error-text"></p>
+            </form>
+        </div>
+    </div>
+    <div class="modal" id="modal1">
+        <div class="modal-dialog">
+          <header class="modal-header">
+            <h1>Resultado</h1>
+            <button class="close-modal">✕</button>
+          </header>
+          <section class="modal-content">
+              <p class="result-text"></p>
+          </section>
+        </div> 
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

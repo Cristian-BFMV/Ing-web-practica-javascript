@@ -10,8 +10,10 @@
 
 2. Escriba un programa de JavaScript para determinar si un año dado es un año bisiesto en el
    calendario gregoriano.
+
    1. El año debe ingresarse mediante HTML
    2. La respuesta debe mostrarse en el HTML de forma legible para el usuario
+
 3. Se le proporciona una lista de enteros (X) no vacía. Para esta tarea, debe devolver una lista
    que conste solo de los elementos no únicos en esta lista. Para hacerlo, deberá eliminar
    todos los elementos únicos (elementos que están contenidos en una lista determinada solo
@@ -19,4 +21,4 @@
    elementos no únicos y el resultado será [1, 3, 1, 3].
 4. Los números romanos provienen del antiguo sistema de numeración romano. Se basan en
    letras específicas del alfabeto que se combinan para significar la suma (o, en algunos casos,
-   la diferencia) de sus valores. Los diez primeros números romanos son: I, II, III, IV, V, VI, VII, VIII, IX y X.
+   la diferencia) de sus valores. Los diez primeros números romanos son:I, II, III, IV, V, VI, VII, VIII, IX y X.
